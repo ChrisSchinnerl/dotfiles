@@ -5,12 +5,23 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'Shougo/neocomplete.vim'
 call plug#end()
 
+" ***************** General stuff ***************** "
 " enable molokai "
 let g:rehash256 = 1
 let g:molokai_original = 1
 colorscheme molokai
+
+" Automatically enable neocomplete
+let g:neocomplete#enable_at_startup = 1
+
+" Quick window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " ******************** Golang  ******************** "
 
@@ -51,3 +62,7 @@ let g:go_auto_sameids = 1
 
 " Autostart "
 autocmd vimenter * NERDTree
+
+" NERDTree on <leader>t and <leader>f
+nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
