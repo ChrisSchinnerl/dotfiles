@@ -23,6 +23,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" display line numbers
+set number
 " ******************** Golang  ******************** "
 
 " enable save on build"
@@ -61,7 +63,7 @@ let g:go_auto_sameids = 1
 " ******************** NerdTree ******************* " 
 
 " Autostart "
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 " NERDTree on <leader>t and <leader>f
 nnoremap <leader>t :NERDTree<CR>
