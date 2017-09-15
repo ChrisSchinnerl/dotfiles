@@ -25,6 +25,9 @@ nnoremap <C-l> <C-w>l
 
 " display line numbers
 set number
+
+" default case insensitive search
+set ignorecase
 " ******************** Golang  ******************** "
 
 " enable save on build"
@@ -66,5 +69,5 @@ let g:go_auto_sameids = 1
 "autocmd vimenter * NERDTree
 
 " NERDTree on <leader>t and <leader>f
-nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
